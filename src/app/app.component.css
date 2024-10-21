@@ -1,0 +1,27 @@
+
+mat-card.commands{
+    background-color:white;
+    min-width:500px;
+    box-shadow:
+         0px 0px 10px 0px var(--light),
+            0 1px 1px 0 var(--light),
+            0 1px 3px 0 var(--light);
+            padding:10px;
+ 
+}
+
+mat-card-title{
+    font-size:1rem;
+
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap:20px
+  }
+
+  img{
+    border-radius: 15px;
+    
+  }

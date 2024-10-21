@@ -1,5 +1,99 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~@angular/material/prebuilt-themes/purple-green.css";
 
+:root{
+    --bdark:#003135;
+    --medium-dark:#024950;
+    --accent:#964734;
+    --bold:#0FA4AF;
+    --light:#AFDDE5;
+    --almost-white:#EBFAFD;
+}
+
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; 
+    color:var(--light);}
+
+.align-items-center {
+  align-items: center !important;
+}
+
+.justify-content-start {
+    justify-content: flex-start !important;
+  }
+
+.logo-box{
+  text-align: left;
+  width: 270px;
+}
+
+.fixed{
+    position:fixed;
+}
+
+
+.no-dots{
+    list-style:none;
+}
+
+a{
+    text-decoration:none;
+}
+
+.logo{
+    height:40px;
+    width:40px;
+    vertical-align:middle;
+    padding-right:3px;
+}
+
+.toolbar{
+    background: white;
+    color:var(--medium-dark);
+    font-size: 1.2rem;
+    line-height: 80px;
+ }
+
+.toolbar-title{
+    color:var(--medium-dark);
+    font-size:  1.5rem;
+}
+
+ul.vertical-list li{
+    display:inline-block;
+    padding-right:10px;
+}
+
+.megamenu{
+    font-size:1rem
+}
+
+li a {
+    color:var(--bold);
+    background-color:white;
+    style:bold;
+}
+
+li a:visited{
+    color:var(--medium-dark);
+}
+
+mat-drawer{
+    width:15%;
+}
+
+mat-drawer-container{
+    height:100%;
+}
+
+mat-drawer-content{
+    color:var(--bdark);
+    background-color:var(--almost-white);
+    padding:20px
+}
+
+mat-drawer-container .example-drawer{
+    color:var(--bold);
+    background-color:white
+}
+
