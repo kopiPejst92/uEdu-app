@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Command } from '../models/command';
 
 @Component({
   selector: 'app-commands-list',
@@ -6,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./commands-list.component.css']
 })
 export class CommandsListComponent {
+  commandsList: Command[] = [];
+  
+  constructor(){
+    
+  }
+ 
+  }
 
-}
