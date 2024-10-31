@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { CommandsListComponent } from './commands-list/commands-list.component';
 
 const routes: Routes = [
+  {path:'', redirectTo:'/home_page',pathMatch: 'full'},
   {path: 'commands', component:CommandsListComponent}
 ];
 

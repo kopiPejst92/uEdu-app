@@ -4,3 +4,17 @@
     width:90%;
     background-color:inherit;
 }
+
+.cdesc{
+    font-family:Courier New;
+    font-weight:600
+}
+
+.cname{
+    color:var(--bold);
+    font-weight:300
+}
+
+.fm-avatar img{
+    width:90%
+}

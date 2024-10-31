@@ -1,6 +1,14 @@
 
 <ul class="no-dots">
-    <li><mat-card class="commands-item">Angular</mat-card></li>
-    <li><mat-card class="commands-item">Angular</mat-card></li>
-
+    <li>
+        
+        <mat-card *ngFor="let command of commandsList" class="commands-item">
+        <mat-card-header>
+            <div mat-card-avatar class="fm-avatar"><img src="assets/images/framework-logo/{{command.logo}}"></div>
+            <mat-card-subtitle class="cname">{{command.name}}</mat-card-subtitle>
+            <mat-card-title class="cdesc">{{command.function}}</mat-card-title>
+          </mat-card-header>
+        <mat-card-content>{{command.framework}}</mat-card-content>            
+    </mat-card>
+    </li>
 </ul>

@@ -1,6 +1,9 @@
 export interface Command {
     id: number,
-    description: string,
+    name: string,
+    function: string,
     syntax: string,
-    tags: string[]
+    tags: string[],
+    framework: string, 
+    logo:string
 }
