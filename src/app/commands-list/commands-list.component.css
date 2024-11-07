@@ -7,6 +7,7 @@
 
 .cdesc{
     font-family:Courier New;
+    color:var(--bmedium);
     font-weight:600
 }
 

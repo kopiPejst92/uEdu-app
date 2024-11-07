@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Command } from '../models/command';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-commands-list',
@@ -19,12 +20,12 @@ export class CommandsListComponent implements OnInit {
     logo:"angular-icon.png"
   }
   
-  constructor(){
+  constructor(public router: Router){
     
   }
 
   ngOnInit(): void {
-   
+   /* just to check listing */
     this.commandsList.push(this.command);
   }
  
