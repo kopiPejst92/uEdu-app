@@ -1,7 +1,5 @@
 .commands-item {
     line-height:2rem;
-    padding-left:10px;
-    width:90%;
     background-color:inherit;
 }
 
@@ -19,3 +17,9 @@
 .fm-avatar img{
     width:90%
 }
+ 
+mat-card-title{
+    font-size:1.2rem;
+    margin-top:5px
+}
+

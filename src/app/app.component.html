@@ -1,45 +1,28 @@
 <mat-toolbar>
     <mat-toolbar-row class="toolbar">
-        <div class="logo-box justify-content-start align-items-center">
+        <div class="logo-box justify-content-start">
             <a href="/">
                 <img src="assets/images/logo.png" class="logo">
-                <span class="toolbar-title">Edu</span>
+                <span class="tlb-title">Uedu</span>
             </a>
         </div>
-        <nav>
-            <div>
-                <ul class="no-dots vertical-list">
-                    <li><mat-icon aria-hidden="false" fontIcon="home"></mat-icon></li>
-                    <li><mat-icon aria-hidden="false" fontIcon="settings"></mat-icon></li>
-                </ul>
-            </div>
-        </nav>
+        <ul class="no-dots vertical-list toolbar-options">
+            <li><mat-icon aria-hidden="false" fontIcon="home"></mat-icon></li>
+            <li><mat-icon aria-hidden="false" fontIcon="settings"></mat-icon></li>
+        </ul>
     </mat-toolbar-row>
-
 </mat-toolbar>
+
 <mat-drawer-container>
-    <mat-drawer opened class="example-drawer " mode="side">
+    <mat-drawer opened class="example-drawer" mode="side">
         <ul class="no-dots megamenu">
             <li><a routerLink="/frameworks">Frameworks</a></li>
             <li><a routerLink="/commands">Commands</a></li>
-            <li>Tutorials</li>
-            <li>Sources</li>
+            <li><a routerLink="/tutorials">Tutorials</a></li>
+            <li><a routerLink="/sources">Sources</a></li>
         </ul>
     </mat-drawer>
     <mat-drawer-content class="bcg">
-            <div class="grid-container justify-content-center">
-                <div class="grid-item">
-                    <mat-card class="commands">
-                        <mat-card-title>Commands</mat-card-title>
-                        <app-commands-list></app-commands-list>
-                        <router-outlet></router-outlet>
-                    </mat-card>
-                </div>
-                <div class="grid-item">
-                    <mat-card class="card-ai">
-                        <img src="assets/images/ai-education.webp">
-                    </mat-card>
-                </div>   
-            </div>
+        <router-outlet></router-outlet>
     </mat-drawer-content>
-</mat-drawer-container>
+</mat-drawer-container> 

@@ -1,34 +1,39 @@
-
-mat-card.commands{
-    background-color:white;
-    min-width:500px;
-    box-shadow:
-         0px 0px 10px 0px var(--bmedium),
-            0 1px 1px 0 var(--light),
-            0 1px 3px 0 var(--light);
-            padding:10px;
- 
+.toolbar-options li:nth-child(2){
+  margin-left:30px;
 }
 
-mat-card-title{
-    font-size:1.2rem;
-    margin-left:40px;
-    margin-top:10px
+mat-icon{
+  padding-top:5px
 }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    gap:20px;
-    align-content:center
- }
+mat-icon:hover{
+  color:var(--bright);
+  vertical-align:middle;
+}
 
-  img{
-    border-radius: 15px;
-  }
+.megamenu{
+    font-size:1rem;
+}
+
+.megamenu li {
+  margin-top:15px;
+  margin-left:25px
+}
+
+mat-drawer-container{
+  height:100%;
+}
+
+mat-drawer-content{
+  color:var(--bdark);
+  padding:30px;
+}
 
 
-  .card-ai{
-    width:70%;
-    background-color:inherit
-  }
+mat-drawer-container .example-drawer{
+  color:var(--bold);
+  background-color:white; 
+  padding:10px;
+  width:15%;
+  box-shadow: 0px 0px 20px var(--medium-dark)
+}

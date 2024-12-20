@@ -10,11 +10,13 @@ import { RouterLink } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CommandsListComponent } from './commands-list/commands-list.component';
+import { WelcomeComponent } from './welcome/welcome.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CommandsListComponent
+    CommandsListComponent,
+    WelcomeComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,27 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap:20px;
+    align-content:center;
+    margin:10px
+ }
+
+mat-card {
+    background:white
+}
+
+mat-card.commands{
+    min-width:450px;
+    padding:15px;
+}
+
+.card-ai{
+    background-color:inherit;
+    border-radius:15px;
+}
+
+.card-ai img{
+    object-fit:cover;
+    width:100%;
+    border-radius:10px
+}
