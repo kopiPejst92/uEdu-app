@@ -1,6 +1,6 @@
 .commands-item {
     line-height:2rem;
-    background-color:inherit;
+    background-color:white;
 }
 
 .cdesc{
@@ -10,12 +10,24 @@
 }
 
 .cname{
-    color:var(--bold);
+    color:var(--medium-dark);
     font-weight:300
 }
 
 .fm-avatar img{
-    width:90%
+    width:90%;
+    vertical-align:middle
+}
+.fm-avatar{
+    margin:0;
+    height:100%;
+    border-radius:0px;
+    line-height:1rem;
+}
+
+.fm-name{
+    font-size:0.8rem;
+    text-align:top
 }
  
 mat-card-title{
