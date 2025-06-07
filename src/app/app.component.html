@@ -2,13 +2,14 @@
     <mat-toolbar-row class="toolbar">
         <div class="logo-box justify-content-start">
             <a href="/">
-                <img src="assets/images/logo.png" class="logo">
-                <span class="tlb-title">Uedu</span>
+                <span class="tlb-title">Easy</span>
+                <img src="assets/images/logo_color.png" class="logo">
+
             </a>
         </div>
         <ul class="no-dots vertical-list toolbar-options">
-            <li><mat-icon aria-hidden="false" fontIcon="home"></mat-icon></li>
-            <li><mat-icon aria-hidden="false" fontIcon="settings"></mat-icon></li>
+            <li><mat-icon aria-hidden="false" fontIcon="home" matTooltip="home"></mat-icon></li>
+            <li><mat-icon aria-hidden="false" fontIcon="settings" matTooltip="settings"></mat-icon></li>
         </ul>
     </mat-toolbar-row>
 </mat-toolbar>
@@ -20,9 +21,18 @@
             <li><a routerLink="/commands">Commands</a></li>
             <li><a routerLink="/tutorials">Tutorials</a></li>
             <li><a routerLink="/sources">Sources</a></li>
+            <li><a routerLink="/useful">Useful links</a></li>
+
         </ul>
     </mat-drawer>
     <mat-drawer-content class="bcg">
         <router-outlet></router-outlet>
     </mat-drawer-content>
-</mat-drawer-container> 
+</mat-drawer-container>
+
+<footer class="edu-footer sticky-footer">
+    <div class="grid-container-footer align-items-center small">
+        <mat-icon aria-hidden="false" fontIcon="school"></mat-icon>
+        Designed for educational purposes
+    </div>
+</footer>

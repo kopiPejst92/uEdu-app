@@ -4,19 +4,20 @@ import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatTooltipModule } from '@angular/material/tooltip';
 import { BrowserModule, } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { RouterLink } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { CommandsListComponent } from './commands-list/commands-list.component';
+import { CommandModule } from './command/command.module';
 import { WelcomeComponent } from './welcome/welcome.component';
+import { CommandsListComponent } from './commands-list/commands-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CommandsListComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    CommandsListComponent
   ],
   imports: [
     BrowserModule,
@@ -27,7 +28,8 @@ import { WelcomeComponent } from './welcome/welcome.component';
     BrowserAnimationsModule,
     MatIconModule,
     MatCardModule,
-    RouterLink
+    MatTooltipModule, 
+    CommandModule
   ],
   providers: [],
   bootstrap: [AppComponent]

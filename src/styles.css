@@ -2,13 +2,14 @@
 @import "~@angular/material/prebuilt-themes/purple-green.css";
 
 :root{
-    --bdark:#003135;
-    --medium-dark:#024950;
-    --accent:#964734;
-    --bright:#fa3d0f;
-    --bold:#0FA4AF;
-    --light:#AFDDE5;
-    --almost-white:#EBFAFD;
+    --vdark: #003135;
+    --vlight: #ebf2f2;
+    --mdark: #024950;
+    --accent: #964734;
+    --bright: #fa3d0f;
+    --bold: #0FA4AF;
+    --light: #AFDDE5;
+    --awhite: #dde4e4;
 }
 
 html, body{
@@ -17,7 +18,7 @@ html, body{
 
 body{
     font-family:Roboto, "Helvetica Neue", sans-serif;
-    margin: 0
+    margin: 0;
 }
 
 .bcg{
@@ -57,6 +58,10 @@ body{
 .align-items-center {
     align-items: center !important;
   }
+
+  .align-items-end {
+    align-items: end !important;
+  }
   
 .justify-content-start {
       justify-content: flex-start !important;
@@ -68,12 +73,14 @@ body{
 
 .no-dots{
     list-style:none;
-    padding:10px;
+    padding:0;
 }
+
+
 
 .toolbar{
     background:white;
-    color:var(--medium-dark);
+    color:var(--mdark);
 }
 
 .logo-box{
@@ -96,7 +103,6 @@ body{
     vertical-align:middle;
 }
 
-
 a{
     text-decoration:none;
     color:var(--bold)
@@ -113,4 +119,14 @@ a:visited{
 
 ul.vertical-list li{
     display:inline-block;
+}
+
+footer mat-icon{
+    color:white
+}
+
+footer{
+    padding:20px;
+    background:var(--mdark);
+    color:white
 }

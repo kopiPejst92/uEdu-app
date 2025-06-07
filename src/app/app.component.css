@@ -1,14 +1,13 @@
 .toolbar-options li:nth-child(2){
-  margin-left:30px;
+  margin-left:20px;
 }
 
 mat-icon{
   padding-top:5px
 }
 
-mat-icon:hover{
+mat-icon.mat-icon:hover{
   color:var(--bright);
-  vertical-align:middle;
 }
 
 .megamenu{
@@ -35,5 +34,15 @@ mat-drawer-container .example-drawer{
   background-color:white; 
   padding:10px;
   width:15%;
-  box-shadow: 0px 0px 20px var(--medium-dark)
+  box-shadow: 0px 0px 20px var(--mdark)
+}
+
+.grid-container-footer{
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+  width:20%;
+}
+
+.sticky-footer{
+  
 }

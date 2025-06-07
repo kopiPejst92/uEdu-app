@@ -1,16 +1,21 @@
 .commands-item {
-    line-height:2rem;
+    line-height:1.7rem;
     background-color:white;
+    margin-bottom:5px;    
 }
 
-.cdesc{
+mat-card-title.cdesc{
     font-family:Courier New;
-    color:var(--bmedium);
-    font-weight:600
+    font-size:1rem;
+    margin-right:-20px;
+    color:var(--vdark);
+    padding:0px 10px;
+    background:var(--vlight);
+    border: 0.2px solid var(--awhite);
 }
 
 .cname{
-    color:var(--medium-dark);
+    color:var(--mdark);
     font-weight:300
 }
 
@@ -22,16 +27,27 @@
     margin:0;
     height:100%;
     border-radius:0px;
-    line-height:1rem;
+    line-height:0.8rem;
 }
 
 .fm-name{
-    font-size:0.8rem;
-    text-align:top
-}
- 
-mat-card-title{
-    font-size:1.2rem;
-    margin-top:5px
+    font-size:0.7rem;
+    text-align:top;
+    marign-top:1px;
+    color:var(--vdark);
 }
 
+.ctitles{
+    margin-left:30px;
+}
+
+.out-btn{
+    margin: 8px 8px 8px 0;
+    padding:12px 20px;
+    border-style: solid;
+    background:white;
+    color:var(--mdark);
+    border-color: var(--bold);
+    border-radius:20px;
+    self-align:
+}

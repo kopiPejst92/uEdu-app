@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Command } from '../models/command';
 import { Router } from '@angular/router';
+import { Command } from '../models/command';
 
 @Component({
   selector: 'app-commands-list',
@@ -10,24 +10,38 @@ import { Router } from '@angular/router';
 export class CommandsListComponent implements OnInit {
   commandsList: Command[] = [];
 
-  command: Command={
-    id:1,
+  command: Command = {
+    id: 1,
     name: "Creating project",
-    function:"ng new appointment",
-    syntax:"ng new [project_name]",
-    tags:["project_name"],
-    framework:"Angular",
-    logo:"angular-icon.png"
+    function: "ng new appointment",
+    syntax: "ng new [project_name]",
+    tags: ["project_name"],
+    framework: "Angular",
+    logo: "angular-icon.png"
   }
-  
-  constructor(public router: Router){
-    
+
+  command2: Command = {
+    id: 2,
+    name: "Running up in browser",
+    function: "ng serve --open",
+    syntax: "ng serve [project_name]",
+    tags: ["open"],
+    framework: "Angular",
+    logo: "angular-icon.png"
+  }
+
+  constructor(public router: Router) {
+
   }
 
   ngOnInit(): void {
-   /* just to check listing */
     this.commandsList.push(this.command);
+    this.commandsList.push(this.command2);
   }
- 
+
+  loadCommandFromJson(pathFile: string){
+    
   }
+
+}
 
