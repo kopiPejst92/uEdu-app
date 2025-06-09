@@ -12,6 +12,8 @@ import { AppComponent } from './app.component';
 import { CommandModule } from './command/command.module';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { CommandsListComponent } from './commands-list/commands-list.component';
+import { MatInputModule } from '@angular/material/input';
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -29,8 +31,10 @@ import { CommandsListComponent } from './commands-list/commands-list.component';
     MatIconModule,
     MatCardModule,
     MatTooltipModule, 
-    CommandModule
-  ],
+    CommandModule,
+    MatInputModule,
+    FormsModule]
+  ,
   providers: [],
   bootstrap: [AppComponent]
 })

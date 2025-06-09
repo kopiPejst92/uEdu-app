@@ -1,5 +1,18 @@
-<div class="new-command-container">
-    <form>
-      <button class="btn btn-primary my-3" type="submit">Submit</button>  
-    </form>
+<div class="new-command-container" [formGroup]="newCommandForm">
+  <mat-form-field></mat-form-field>
+    <mat-form-field hintLabel="Max 10 characters">
+    <mat-label>Enter commands name</mat-label>
+    <input matInput class="form-input" placeholder="java install" (ngSubmit)="onSubmit()" />
+    <!-- <mat-hint>{{value().length}}/10</mat-hint> -->
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Select me</mat-label>
+    <mat-select  class="form-input">
+      <mat-option value="option">Option</mat-option>
+    </mat-select>
+    <mat-hint>Here's the dropdown arrow ^</mat-hint>
+  </mat-form-field>
+  <button class="out-btn">Submit</button>
 </div>
+

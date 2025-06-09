@@ -1,6 +1,6 @@
 <div>
-<button class="out-btn align-items-end">New command</button>
-    <ul class="no-dots">
+
+    <ul class="no-dots" *ngIf="commandsList.length; else noCommands">
         <li>
             <mat-card *ngFor="let command of commandsList" class="commands-item">
                 <mat-card-header>
@@ -18,4 +18,7 @@
             </mat-card>
         </li>
     </ul>
+<ng-template #noCommands>
+    <div class="no-com small">No saved commands</div>
+</ng-template>
 </div>
